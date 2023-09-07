@@ -1,5 +1,5 @@
-const { app, BrowserWindow } = require('electron')
-const path = require("path")
+const { app, BrowserWindow,shell} = require('electron')
+
 const createWindow = () => {
     const win = new BrowserWindow({
         titleBarStyle: "hidden",
