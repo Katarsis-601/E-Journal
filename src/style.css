@@ -8,6 +8,7 @@ button {
   cursor: pointer;
 }
 .title {
+  margin-bottom: 5px;
   color: white;
 }
 
@@ -29,8 +30,28 @@ button {
   grid-template-columns: 49% 49%;
   color: white;
 }
+.credits-text {
+  font-size: 0.6em;
+  margin-top: 0;
+}
+
+#author-btn {
+  font-size: 0.8em;
+  margin-left: 2px;
+}
+
 .uk-card-title {
   color: white;
+}
+
+.card-description {
+  padding: 10px;
+  background-color: #2c3639;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-info {
+  align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -43,14 +64,4 @@ button {
 
 ::-webkit-scrollbar-thumb {
   background: #3f4e4f;
-}
-
-.card-description {
-  padding: 10px;
-  background-color: #2c3639;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.card-info {
-  align-items: center;
 }

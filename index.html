@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script defer src="./src/render.js"></script>
+    <script defer src="./src/render.js" type="module"></script>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.24/dist/js/uikit.min.js"></script>
@@ -17,26 +17,15 @@
         <div class="uk-flex uk-flex-column uk-align-center uk-flex-center uk-width-1-1 ">
             <div class="uk-width-1-1 header">
                 <h1 class="uk-text-bolder title">E-JOURNAL</h1>
+                <p class="credits-text">Create By <button class="uk-button-secondary uk-text-bolder"
+                        id="author-btn">Katarsis-601</button>
+                </p>
                 <div>
                     <button class="uk-button-primary add-btn" type="button">Add Journal</button>
                     <button class="uk-button-danger clear-btn" type="button">Clear Journal</button>
                 </div>
             </div>
             <div class="content uk-margin-top uk-width-1-1">
-                <div class="uk-card uk-card-body" id="card">
-                    <h2 class="uk-card-title">Title</h2>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea
-                        corrupti dolorem, eius et quod
-                        voluptas nam. Exercitationem, nihil vel minus eligendi enim dolorum quia totam nisi voluptates
-                        soluta architecto?</p>
-                    <div class="uk-flex uk-flex-row uk-flex-between card-info">
-                        <p class="uk-text-small uk-text-muted uk-margin-remove">test</p>
-                        <div>
-                            <button class="uk-button-primary">Edit</button>
-                            <button class="uk-button-danger">Delete</button>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
