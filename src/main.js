@@ -1,5 +1,4 @@
-const { app, BrowserWindow } = require("electron");
-
+const { app, BrowserWindow, dialog } = require("electron");
 const createWindow = () => {
   const win = new BrowserWindow({
     titleBarStyle: "hidden",
@@ -15,6 +14,7 @@ const createWindow = () => {
 };
 app.whenReady().then(() => {
   createWindow();
+
   app.on("activate", () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
