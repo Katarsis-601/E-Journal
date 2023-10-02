@@ -1,14 +1,37 @@
 {
-  "name": "e-journal",
+  "name": "my-app",
+  "productName": "my-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "My Electron application description",
+  "main": ".webpack/main",
   "scripts": {
-    "start": "electron ./src/main.js"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
-  "author": "Katarsis-601",
+  "keywords": [],
+  "author": {
+    "name": "katarsis-601",
+    "email": "andrianow817@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
-    "electron": "^26.0.0"
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "@electron-forge/plugin-webpack": "^6.4.2",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "css-loader": "^6.8.1",
+    "electron": "26.2.4",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.3.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
